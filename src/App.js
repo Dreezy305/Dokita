@@ -6,6 +6,15 @@ import About from "./components/About";
 import Blog from "./components/Blog";
 
 function App() {
+  const menuList = [
+    { id: 1, title: "HOME", to: "/" },
+    { id: 2, title: "ABOUT", to: "/about" },
+    { id: 3, title: "PATIENT PORTAL", to: "/patientportal" },
+    { id: 4, title: "SERVICES", to: "/services" },
+    { id: 5, title: "BLOG", to: "/blog" },
+    { id: 6, title: "CONTACT", to: "/contact" },
+  ];
+
   return (
     <div className="App">
       <Router>

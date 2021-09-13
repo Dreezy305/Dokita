@@ -19,8 +19,20 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(2),
   },
   title: {
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down("xs")]: {
       flexGrow: 1,
+      marginLeft: theme.spacing(2),
+    },
+    [theme.breakpoints.down("md")]: {
+      flexGrow: 1,
+      marginLeft: theme.spacing(2),
+    },
+    marginRight: theme.spacing(8),
+    marginLeft: theme.spacing(22),
+  },
+  menuOptions: {
+    "& > *": {
+      margin: theme.spacing(2),
     },
   },
 }));
@@ -43,21 +55,25 @@ function NavBar(props) {
     setAnchorEl(null);
   };
 
+  const handleButtonClick = (pageURL) => {
+    history.push(pageURL);
+  };
+
   const menuList = [
-    "HOME",
-    "ABOUT",
-    "PATIENT PORTAL",
-    "SERVICES",
-    "BLOG",
-    "CONTACT",
+    { id: 1, title: "HOME", to: "/" },
+    { id: 2, title: "ABOUT", to: "/about" },
+    { id: 3, title: "PATIENT PORTAL", to: "/patientportal" },
+    { id: 4, title: "SERVICES", to: "/services" },
+    { id: 5, title: "BLOG", to: "/blog" },
+    { id: 6, title: "CONTACT", to: "/contact" },
   ];
 
   return (
     <div className={classes.root}>
       <AppBar position="static" color="transparent">
-        <Toolbar disableGutter>
+        <Toolbar className={classes.root}>
           <Typography variant="h6" className={classes.title}>
-            Photos
+            Dokita
           </Typography>
 
           <div>
@@ -87,23 +103,20 @@ function NavBar(props) {
                   open={open}
                   onClose={() => setAnchorEl(null)}
                 >
-                  <MenuItem onClick={() => handleMenuClick("/")}>Home</MenuItem>
-                  <MenuItem onClick={() => handleMenuClick("/about")}>
-                    About Us
-                  </MenuItem>
-                  <MenuItem onClick={() => handleMenuClick("/blog")}>
-                    Blog
-                  </MenuItem>
+                  {menuList.map((item) => (
+                    <MenuItem onClick={() => handleMenuClick(`${item.to}`)}>
+                      {item.title}
+                    </MenuItem>
+                  ))}
                 </Menu>
               </>
             ) : (
-              <div>
-                <Button variant="contained">HOME</Button>
-                <Button variant="contained">ABOUT US</Button>
-                {/*<Button>PATIENT PORTAL</Button>*/}
-                {/*<Button>SERVICES</Button>*/}
-                <Button variant="contained">BLOG</Button>
-                {/*<Button>CONTACT</Button>*/}
+              <div className={classes.menuOptions}>
+                {menuList.map((item) => (
+                  <Button onClick={() => handleButtonClick(`${item.to}`)}>
+                    {item.title}
+                  </Button>
+                ))}
               </div>
             )}
           </div>
