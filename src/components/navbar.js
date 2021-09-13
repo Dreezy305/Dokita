@@ -10,6 +10,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { withRouter } from "react-router-dom";
+import styles from "../styles/globals.scss";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -21,18 +22,22 @@ const useStyles = makeStyles((theme) => ({
   title: {
     [theme.breakpoints.down("xs")]: {
       flexGrow: 1,
+      marginRight: theme.spacing(1),
+    },
+    [theme.breakpoints.down("sm")]: {
+      flexGrow: 1,
       marginLeft: theme.spacing(2),
     },
     [theme.breakpoints.down("md")]: {
       flexGrow: 1,
       marginLeft: theme.spacing(2),
     },
-    marginRight: theme.spacing(8),
-    marginLeft: theme.spacing(22),
+    marginRight: theme.spacing(24),
+    marginLeft: theme.spacing(8),
   },
   menuOptions: {
     "& > *": {
-      margin: theme.spacing(2),
+      marginLeft: theme.spacing(4),
     },
   },
 }));
@@ -71,8 +76,11 @@ function NavBar(props) {
   return (
     <div className={classes.root}>
       <AppBar position="static" color="transparent">
-        <Toolbar className={classes.root}>
-          <Typography variant="h6" className={classes.title}>
+        <Toolbar className={`${classes.root} ${styles.test}`}>
+          <Typography
+            variant="h6"
+            className={`${classes.title} ${styles.test}`}
+          >
             Dokita
           </Typography>
 
