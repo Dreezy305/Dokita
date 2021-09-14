@@ -1,137 +1,54 @@
 import React from "react";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
-import IconButton from "@material-ui/core/IconButton";
-import Button from "@material-ui/core/Button";
-import MenuIcon from "@material-ui/icons/Menu";
-import MenuItem from "@material-ui/core/MenuItem";
-import Menu from "@material-ui/core/Menu";
-import useMediaQuery from "@material-ui/core/useMediaQuery";
-import { withRouter } from "react-router-dom";
-import styles from "../styles/globals.scss";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    [theme.breakpoints.down("xs")]: {
-      flexGrow: 1,
-      marginRight: theme.spacing(1),
-    },
-    [theme.breakpoints.down("sm")]: {
-      flexGrow: 1,
-      marginLeft: theme.spacing(2),
-    },
-    [theme.breakpoints.down("md")]: {
-      flexGrow: 1,
-      marginLeft: theme.spacing(2),
-    },
-    marginRight: theme.spacing(24),
-    marginLeft: theme.spacing(8),
-  },
-  menuOptions: {
-    "& > *": {
-      marginLeft: theme.spacing(4),
-    },
-  },
-}));
+import "bootstrap/dist/css/bootstrap.css";
 
-function NavBar(props) {
-  const { history } = props;
-  console.log(history);
-  const classes = useStyles();
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-
-  const handleMenu = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleMenuClick = (pageURL) => {
-    history.push(pageURL);
-    setAnchorEl(null);
-  };
-
-  const handleButtonClick = (pageURL) => {
-    history.push(pageURL);
-  };
-
-  const menuList = [
-    { id: 1, title: "HOME", to: "/" },
-    { id: 2, title: "ABOUT", to: "/about" },
-    { id: 3, title: "PATIENT PORTAL", to: "/patientportal" },
-    { id: 4, title: "SERVICES", to: "/services" },
-    { id: 5, title: "BLOG", to: "/blog" },
-    { id: 6, title: "CONTACT", to: "/contact" },
+function NavBar() {
+  const RoutesList = [
+    { id: 1, path: "/", title: "Home" },
+    { id: 2, path: "/about", title: "About" },
+    { id: 3, path: "/patient", title: "Patient Portal" },
+    { id: 4, path: "/services", title: "Services" },
+    { id: 5, path: "/blog", title: "Blog" },
+    { id: 6, path: "/contact", title: "Contact" },
   ];
-
   return (
-    <div className={classes.root}>
-      <AppBar position="static" color="transparent">
-        <Toolbar className={`${classes.root} ${styles.test}`}>
-          <Typography
-            variant="h6"
-            className={`${classes.title} ${styles.test}`}
-          >
-            Dokita
-          </Typography>
-
-          <div>
-            {isMobile ? (
-              <>
-                <IconButton
-                  edge="start"
-                  className={classes.menuButton}
-                  color="inherit"
-                  aria-label="menu"
-                  onClick={handleMenu}
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <div className="container-fluid ">
+        <a className="navbar-brand ms-5" href="#">
+          DOKITA
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div
+          className="collapse navbar-collapse d-flex justify-content-end me-5"
+          id="navbarNav"
+        >
+          <ul className="navbar-nav">
+            {RoutesList.map((list) => (
+              <li className="nav-item" key={list.id}>
+                <a
+                  className="nav-link active"
+                  aria-current="page"
+                  href={`${list.path}`}
                 >
-                  <MenuIcon />
-                </IconButton>
-                <Menu
-                  id="menu-appbar"
-                  anchorEl={anchorEl}
-                  anchorOrigin={{
-                    vertical: "top",
-                    horizontal: "right",
-                  }}
-                  keepMounted
-                  transformOrigin={{
-                    vertical: "top",
-                    horizontal: "right",
-                  }}
-                  open={open}
-                  onClose={() => setAnchorEl(null)}
-                >
-                  {menuList.map((item) => (
-                    <MenuItem onClick={() => handleMenuClick(`${item.to}`)}>
-                      {item.title}
-                    </MenuItem>
-                  ))}
-                </Menu>
-              </>
-            ) : (
-              <div className={classes.menuOptions}>
-                {menuList.map((item) => (
-                  <Button onClick={() => handleButtonClick(`${item.to}`)}>
-                    {item.title}
-                  </Button>
-                ))}
-              </div>
-            )}
-          </div>
-        </Toolbar>
-      </AppBar>
-    </div>
+                  {list.title.toUpperCase()}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 }
 
-export default withRouter(NavBar);
+export default NavBar;
