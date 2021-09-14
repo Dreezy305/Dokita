@@ -13,9 +13,9 @@ function NavBar() {
     { id: 6, path: "/contact", title: "Contact" },
   ];
   return (
-    <nav className={`navbar navbar-expand-lg navbar-light bg-light`}>
-      <div className="container-fluid ">
-        <a className="navbar-brand ms-5" href="#">
+    <nav className={`navbar navbar-expand-lg navbar-light bg-light navs`}>
+      <div className={`container-fluid navs__anchor`}>
+        <a className="navbar-brand ms-5" href="/">
           DOKITA
         </a>
         <button
