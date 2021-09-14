@@ -1,0 +1,12 @@
+@font-face {
+  font-family: MontessaratBlack;
+  src: url(/assets/static/Montserrat/Montserrat-Black.ttf);
+}
+
+@font-face {
+  font-family: MontessaratBold;
+  src: url(/assets/static/Montserrat/Montserrat-Bold.ttf);
+}
+
+$MontessaratBlack: "MontessaratBlack";
+$MontessaratBold: "MontessaratBold";
