@@ -27,8 +27,10 @@ function App() {
             <Route
               exact
               key={Routes.id}
-              path={Routes.Path}
-              render={(props) => <Routes.Component {...props} />}
+              path={Routes.path}
+              render={(props) => {
+                return <Routes.Component {...props} />;
+              }}
             />
           ))}
         </Switch>

@@ -1,6 +1,6 @@
 import React from "react";
-
 import "bootstrap/dist/css/bootstrap.css";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   const RoutesList = [
@@ -32,16 +32,21 @@ function NavBar() {
           className="collapse navbar-collapse d-flex justify-content-end me-5"
           id="navbarNav"
         >
-          <ul className="navbar-nav">
+          <ul className="navbar-nav justify-content-evenly">
             {RoutesList.map((list) => (
-              <li className="nav-item" key={list.id}>
-                <a
+              <li
+                className="nav-item"
+                key={list.id}
+                as={Link}
+                to={`${list.path}`}
+              >
+                <Link
                   className="nav-link active"
                   aria-current="page"
-                  href={`${list.path}`}
+                  to={list.path}
                 >
                   {list.title.toUpperCase()}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
