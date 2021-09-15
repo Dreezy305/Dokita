@@ -21,3 +21,28 @@
     }
   }
 }
+
+.about {
+  h1 {
+    font-family: "MontessaratSemiBold";
+    font-size: $font-36;
+    line-height: $line-height44;
+  }
+  p {
+    font-family: "MontessaratRegular";
+  }
+}
+
+.why {
+  h5 {
+    font-family: "MontessaratBold";
+    font-size: $font-24;
+    line-height: $line-height44;
+  }
+  ul {
+    font-family: "MontessaratMedium";
+    line-height: $line-height29;
+    font-style: normal;
+    color: rgba(18, 18, 18, 0.8);
+  }
+}
