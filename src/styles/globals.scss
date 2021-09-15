@@ -1,7 +1,23 @@
 @import "/src/styles/all.scss";
-//@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap);
 
 /* NAV BAR STYLES*/
-.navs {
-  font-family: "MontessaratBold";
+.menu {
+  font-family: "MontessaratSemiBold";
+  background-color: #ffffff;
+}
+
+.home {
+  font-family: "MontessaratSemiBold";
+  button {
+    font-family: "MontessaratSemiBold";
+    font-size: $font-16;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 500;
+    border: 2px solid #332da0;
+    &:hover {
+      border: 2px solid #332da0;
+      background-color: #332da0;
+    }
+  }
 }

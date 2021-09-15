@@ -8,7 +8,77 @@
   src: url(/assets/static/Montserrat/Montserrat-Bold.ttf);
 }
 
+@font-face {
+  font-family: MontessaratExtraBold;
+  src: url(/assets/static/Montserrat/Montserrat-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: MontessaratExtraLight;
+  src: url(/assets/static/Montserrat/Montserrat-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: MontessaratLight;
+  src: url(/assets/static/Montserrat/Montserrat-Light.ttf);
+}
+
+@font-face {
+  font-family: MontessaratMedium;
+  src: url(/assets/static/Montserrat/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: MontessaratRegular;
+  src: url(/assets/static/Montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: MontessaratSemiBold;
+  src: url(/assets/static/Montserrat/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: MontessaratThin;
+  src: url(/assets/static/Montserrat/Montserrat-Thin.ttf);
+}
+
+@font-face {
+  font-family: OpenSansBold;
+  src: url(/assets/static/OpenSans/OpenSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: OpenSansExtraBold;
+  src: url(/assets/static/OpenSans/OpenSans-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: OpenSansLight;
+  src: url(/assets/static/OpenSans/OpenSans-Light.ttf);
+}
+
+@font-face {
+  font-family: OpenSansRegular;
+  src: url(/assets/static/OpenSans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: OpenSansSemiBold;
+  src: url(/assets/static/OpenSans/OpenSans-SemiBold.ttf);
+}
+
+$OpenSansBold: "OpenSansBold";
+$OpenSansLight: "OpenSansLight";
+$OpenSansExtraBold: "OpenSansExtraBold";
+$OpenSansRegular: "OpenSansRegular";
+$OpenSansSemiBold: "OpenSansSemiBold";
 $MontessaratBlack: "MontessaratBlack";
 $MontessaratBold: "MontessaratBold";
-
-$font-24: 24px;
+$MontessaratBold: "MontessaratExtraBold";
+$MontessaratBold: "MontessaratExtraLight";
+$MontessaratBold: "MontessaratLight";
+$MontessaratBold: "MontessaratMedium";
+$MontessaratBold: "MontessaratRegular";
+$MontessaratBold: "MontessaratSemiBold";
+$MontessaratBold: "MontessaratThin";

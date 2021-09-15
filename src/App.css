@@ -1,0 +1,20 @@
+.menu__list {
+  text-decoration: none;
+}
+
+.menu__list::after,
+.menu__list:hover,
+.menu__list:active {
+  content: "";
+  border-bottom: 2px solid #332da0;
+  color: #332da0;
+}
+
+.menu__list:focus {
+  color: #332da0;
+}
+
+.btn_hover:hover {
+  color: #ffffff !important;
+  background-color: #332da0 !important;
+}
