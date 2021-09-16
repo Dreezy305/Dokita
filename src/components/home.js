@@ -10,10 +10,20 @@ import Knee from "../assets/illustration/knee.svg";
 import CheckUp from "../assets/illustration/checkup.svg";
 import BloodTest from "../assets/illustration/bloodtest.svg";
 import Surgeon from "../assets/team/surgeon.png";
+import Dentist from "../assets/team/dentist.png";
+import Neuro from "../assets/team/neurologist.png";
+import Cardio from "../assets/team/cardiologist.png";
 import "../App.css";
 
 function Home() {
-  const whyUs = [
+  const Teams = [
+    { id: 1, image: Surgeon, name: "Dr.  Adams Jacob", role: "Surgeon" },
+    { id: 2, image: Dentist, name: "Dr.  Yusuf Abdul", role: "Dentist" },
+    { id: 3, image: Neuro, name: "Dr.  Chioma Victory", role: "Neurologist" },
+    { id: 4, image: Cardio, name: "Dr.  Chioma Victory", role: "Cardiologist" },
+  ];
+
+  const Why = [
     { id: 1, item: "Highly Experienced Doctors", icon: CheckCircle },
     { id: 2, item: "24/7 Emergency Support", icon: CheckCircle },
     { id: 3, item: "Cutting Edge Technology", icon: CheckCircle },
@@ -139,7 +149,7 @@ function Home() {
                 <div className="card-body pt-5 pb-5 px-3 pe-5 why__cardbody">
                   <h5 class="card-title ms-4 mb-4">Why choosing Us?</h5>
                   <ul className="" style={{ listStyleType: "none" }}>
-                    {whyUs.map((item) => (
+                    {Why.map((item) => (
                       <li key={item.id} className="mb-3">
                         <img
                           src={item.icon}
@@ -208,19 +218,30 @@ function Home() {
         </h1>
         <div className="container">
           <div className="row">
-            <div
-              className="card w-25"
-              style={{
-                background: "rgba(143, 235, 241, 0.4)",
-                borderRadius: "10px",
-              }}
-            >
-              <img src={Surgeon} alt="team" className="card-img-top" />
-              <div className="card-body text-center">
-                <h5>Dr. Adams Jacob</h5>
-                <h6>Surgeon</h6>
+            {Teams.map((team) => (
+              <div
+                className="card w-25 border-0"
+                style={{
+                  borderRadius: "10px",
+                  overflow: "hidden",
+                }}
+              >
+                <img
+                  src={team.image}
+                  alt="team"
+                  className=""
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    overflow: "hidden",
+                  }}
+                />
+                <div className="card-body text-center">
+                  <h5>{team.name}</h5>
+                  <h6>{team.role}</h6>
+                </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
