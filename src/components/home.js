@@ -14,24 +14,30 @@ import Dentist from "../assets/team/dentist.png";
 import Neuro from "../assets/team/neurologist.png";
 import Cardio from "../assets/team/cardiologist.png";
 import Call from "../assets/illustration/call.svg";
+import Vegie from "../assets/blogs/vegetables.png";
+import Eye from "../assets/blogs/eye.png";
+import Exercise from "../assets/blogs/execise.png";
 import "../App.css";
 
 function Home() {
-  const Blog = [
+  const Blogs = [
     {
       id: 1,
       description: `Benefits of fruit and vegetable
 in daily diet`,
+      image: Vegie,
       author: "kayode Emmanuel",
     },
     {
       id: 2,
       description: " Exercise and your health",
+      image: Exercise,
       author: "Patience Adamu",
     },
     {
       id: 3,
       description: "Eye care and eye defects",
+      image: Eye,
       author: "Tobiloba Adekoya",
     },
   ];
@@ -300,8 +306,8 @@ in daily diet`,
           Read Our Latest Articles
         </h1>
         <div className="container mb-5">
-          <div className="row">
-            {Teams.map((team) => (
+          <div className="row d-flex flex-row justify-content-center ">
+            {Blogs.map((blog) => (
               <div
                 className="card w-25 border-0 team_card "
                 style={{
@@ -310,8 +316,8 @@ in daily diet`,
                 }}
               >
                 <img
-                  src={team.image}
-                  alt="team"
+                  src={blog.image}
+                  alt="blog"
                   className=""
                   style={{
                     width: "100%",
@@ -320,8 +326,8 @@ in daily diet`,
                   }}
                 />
                 <div className="card-body text-center">
-                  <h5>{team.name}</h5>
-                  <h6>{team.role}</h6>
+                  <h5>{blog.description}</h5>
+                  <h6>{blog.author}</h6>
                 </div>
               </div>
             ))}
@@ -329,6 +335,27 @@ in daily diet`,
         </div>
       </section>
       {/* END BLOG */}
+
+      {/* FOOTER */}
+      <footer className="footer mt-3">
+        <div className="container mt-3">
+          <div className="row  d-flex flex-row justify-content-around footer_row">
+            <div className="col-md-4 mt-3 ">
+              <h1>ABOUT</h1>
+              <h5 className="pt-3">DOKITA</h5>
+            </div>
+            <div className="col-md-4 mt-3">
+              <h1>ADDRESS</h1>
+              <h5 className="pt-3">9, James Street, Yaba, Lagos</h5>
+            </div>
+            <div className="col-md-4 mt-3">
+              <h1>CONTACT</h1>
+              <h5 className="pt-3">CONTACT</h5>
+            </div>
+          </div>
+        </div>
+      </footer>
+      {/* END FOOTER */}
     </main>
   );
 }

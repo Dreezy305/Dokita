@@ -119,3 +119,21 @@
     }
   }
 }
+
+.footer {
+  background: #332da0;
+  &_row {
+    h1 {
+      font-family: "MontessaratBold";
+      color: #ffffff;
+      font-size: $font-24;
+      line-height: $line-height29;
+    }
+    h5 {
+      font-family: "MontessaratRegular";
+      color: #ffffff;
+      font-size: $font-20;
+      line-height: $line-height29;
+    }
+  }
+}
