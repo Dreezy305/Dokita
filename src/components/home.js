@@ -9,6 +9,7 @@ import Tooth from "../assets/illustration/tooth.svg";
 import Knee from "../assets/illustration/knee.svg";
 import CheckUp from "../assets/illustration/checkup.svg";
 import BloodTest from "../assets/illustration/bloodtest.svg";
+import Surgeon from "../assets/team/surgeon.png";
 import "../App.css";
 
 function Home() {
@@ -169,7 +170,7 @@ function Home() {
         <h1 className="mt-5 mx-auto d-flex justify-content-center">
           HIGH QUALITY SERVICES
         </h1>
-        <div className="container mt-5 services_header">
+        <div className="container mt-5 mb-5 services_header">
           <div className="row">
             <h1 className="ms-5">Premium </h1>
             <p className="ms-5">HEALTHCARE</p>
@@ -199,6 +200,31 @@ function Home() {
         </div>
       </section>
       {/* END HIGH QUALITY SERVICES */}
+
+      {/* TEAM SECTION */}
+      <section className="team">
+        <h1 className="mt-5 mx-auto mb-5 d-flex justify-content-center">
+          OUR DEDICATED DOCTORS TEAM
+        </h1>
+        <div className="container">
+          <div className="row">
+            <div
+              className="card w-25"
+              style={{
+                background: "rgba(143, 235, 241, 0.4)",
+                borderRadius: "10px",
+              }}
+            >
+              <img src={Surgeon} alt="team" className="card-img-top" />
+              <div className="card-body text-center">
+                <h5>Dr. Adams Jacob</h5>
+                <h6>Surgeon</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* END TEAM SECTION */}
     </main>
   );
 }
