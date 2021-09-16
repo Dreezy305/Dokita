@@ -73,3 +73,26 @@
     }
   }
 }
+
+.team {
+  h1 {
+    font-family: "MontessaratSemiBold";
+    font-size: $font-36;
+    line-height: $line-height44;
+    font-style: normal;
+  }
+  &_card {
+    h5 {
+      font-family: "MontessaratSemiBold";
+      line-height: $line-height29;
+    }
+    h6 {
+      font-family: "MontessaratRegular";
+      line-height: $line-height29;
+    }
+  }
+}
+
+.contact {
+  background: #eeeeee;
+}

@@ -13,6 +13,7 @@ import Surgeon from "../assets/team/surgeon.png";
 import Dentist from "../assets/team/dentist.png";
 import Neuro from "../assets/team/neurologist.png";
 import Cardio from "../assets/team/cardiologist.png";
+import Call from "../assets/illustration/call.svg";
 import "../App.css";
 
 function Home() {
@@ -212,15 +213,15 @@ function Home() {
       {/* END HIGH QUALITY SERVICES */}
 
       {/* TEAM SECTION */}
-      <section className="team">
+      <section className="team mb-5">
         <h1 className="mt-5 mx-auto mb-5 d-flex justify-content-center">
           OUR DEDICATED DOCTORS TEAM
         </h1>
-        <div className="container">
+        <div className="container mb-5">
           <div className="row">
             {Teams.map((team) => (
               <div
-                className="card w-25 border-0"
+                className="card w-25 border-0 team_card "
                 style={{
                   borderRadius: "10px",
                   overflow: "hidden",
@@ -246,6 +247,33 @@ function Home() {
         </div>
       </section>
       {/* END TEAM SECTION */}
+
+      {/* CONTACT US */}
+      <section className="contact">
+        <div className="container">
+          <div className="row text-center d-flex flex-row justify-content-center p-5">
+            <div className="col-md-6 container_col1">
+              <h2>With access to</h2>
+              <h2>24 HOUR EMERGENCY</h2>
+              <h2>Assistance</h2>
+            </div>
+            <div className="col-md-4 d-flex flex-column container-col2">
+              <img
+                src={Call}
+                alt="emergency_call"
+                className="img-fluid mb-2 w-50 h-50"
+              />
+              <button
+                type="button"
+                className="btn btn-primary btn-md mt-2 w-50 h-25"
+              >
+                021300234
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* END CONTACT */}
     </main>
   );
 }
