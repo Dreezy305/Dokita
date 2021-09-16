@@ -17,9 +17,18 @@ import Call from "../assets/illustration/call.svg";
 import Vegie from "../assets/blogs/vegetables.png";
 import Eye from "../assets/blogs/eye.png";
 import Exercise from "../assets/blogs/execise.png";
+import FaceBook from "../assets/logo/facebook.svg";
+import Linkedln from "../assets/logo/linked.svg";
+import Twitter from "../assets/logo/twitter.svg";
 import "../App.css";
 
 function Home() {
+  const Logos = [
+    { id: 1, image: FaceBook },
+    { id: 2, image: Linkedln },
+    { id: 3, image: Twitter },
+  ];
+
   const Blogs = [
     {
       id: 1,
@@ -73,7 +82,7 @@ in daily diet`,
           <div className="row text-center home">
             <div className="col-md-6 align-items-start mt-5 home__text">
               <h2
-                className=""
+                className="mt-5"
                 style={{
                   fontSize: "32px",
                   fontStyle: "normal",
@@ -120,7 +129,7 @@ in daily diet`,
               <img
                 src={MedicalGroup}
                 alt="illustration"
-                className="img-fluid mb-5"
+                className="img-fluid mb-5 mt-5"
               />
             </div>
           </div>
@@ -344,13 +353,21 @@ in daily diet`,
               <h1>ABOUT</h1>
               <h5 className="pt-3">DOKITA</h5>
             </div>
-            <div className="col-md-4 mt-3">
+            <div className="col-md-4 mt-3 ">
               <h1>ADDRESS</h1>
               <h5 className="pt-3">9, James Street, Yaba, Lagos</h5>
             </div>
             <div className="col-md-4 mt-3">
               <h1>CONTACT</h1>
-              <h5 className="pt-3">CONTACT</h5>
+              <div className="pt-3 d-flex flex-row justify-content-around w-25">
+                {Logos.map((logo) => (
+                  <img
+                    src={logo.image}
+                    key={logo.id}
+                    alt="company_logos ms-2"
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>

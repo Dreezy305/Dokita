@@ -14,7 +14,7 @@ function NavBar() {
     { id: 6, path: "/contact", title: "Contact" },
   ];
   return (
-    <nav className="navbar navbar-expand-lg navbar-light mb-5 menu">
+    <nav className="navbar navbar-expand-lg navbar-light mb-5 menu fixed-top">
       <div className="container-fluid menu__anchor">
         <a
           className="navbar-brand ms-5"
