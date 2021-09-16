@@ -95,4 +95,27 @@
 
 .contact {
   background: #eeeeee;
+  &_col1 {
+    p {
+      font-family: "MontessaratRegular";
+      line-height: $line-height29;
+      font-size: $font-24;
+    }
+    h1 {
+      font-family: "MontessaratBold";
+      font-size: $font-40;
+      line-height: $line-height32;
+    }
+  }
+  &_col2 {
+    button {
+      font-family: "MontessaratBold";
+      color: #ffffff;
+      background: #332da0;
+      border: #332da0;
+      &:hover {
+        background: #332da0;
+      }
+    }
+  }
 }

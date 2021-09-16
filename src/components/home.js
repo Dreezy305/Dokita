@@ -17,6 +17,25 @@ import Call from "../assets/illustration/call.svg";
 import "../App.css";
 
 function Home() {
+  const Blog = [
+    {
+      id: 1,
+      description: `Benefits of fruit and vegetable
+in daily diet`,
+      author: "kayode Emmanuel",
+    },
+    {
+      id: 2,
+      description: " Exercise and your health",
+      author: "Patience Adamu",
+    },
+    {
+      id: 3,
+      description: "Eye care and eye defects",
+      author: "Tobiloba Adekoya",
+    },
+  ];
+
   const Teams = [
     { id: 1, image: Surgeon, name: "Dr.  Adams Jacob", role: "Surgeon" },
     { id: 2, image: Dentist, name: "Dr.  Yusuf Abdul", role: "Dentist" },
@@ -250,14 +269,14 @@ function Home() {
 
       {/* CONTACT US */}
       <section className="contact">
-        <div className="container">
-          <div className="row text-center d-flex flex-row justify-content-center p-5">
-            <div className="col-md-6 container_col1">
-              <h2>With access to</h2>
-              <h2>24 HOUR EMERGENCY</h2>
-              <h2>Assistance</h2>
+        <div className="container mb-5">
+          <div className="row text-center d-flex flex-row justify-content-center p-5 ">
+            <div className="col-md-6 contact_col1 d-flex flex-column mt-5">
+              <p>With access to</p>
+              <h1>24 HOUR EMERGENCY</h1>
+              <p>Assistance</p>
             </div>
-            <div className="col-md-4 d-flex flex-column container-col2">
+            <div className="col-md-4 d-flex flex-column contact_col2">
               <img
                 src={Call}
                 alt="emergency_call"
@@ -274,6 +293,42 @@ function Home() {
         </div>
       </section>
       {/* END CONTACT */}
+
+      {/* BLOG */}
+      <section className="team mb-5">
+        <h1 className="mt-5 mx-auto mb-5 d-flex justify-content-center">
+          Read Our Latest Articles
+        </h1>
+        <div className="container mb-5">
+          <div className="row">
+            {Teams.map((team) => (
+              <div
+                className="card w-25 border-0 team_card "
+                style={{
+                  borderRadius: "10px",
+                  overflow: "hidden",
+                }}
+              >
+                <img
+                  src={team.image}
+                  alt="team"
+                  className=""
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    overflow: "hidden",
+                  }}
+                />
+                <div className="card-body text-center">
+                  <h5>{team.name}</h5>
+                  <h6>{team.role}</h6>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* END BLOG */}
     </main>
   );
 }
