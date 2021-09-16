@@ -17,19 +17,10 @@ import Call from "../assets/illustration/call.svg";
 import Vegie from "../assets/blogs/vegetables.png";
 import Eye from "../assets/blogs/eye.png";
 import Exercise from "../assets/blogs/execise.png";
-import FaceBook from "../assets/logo/facebook.svg";
-import Linkedln from "../assets/logo/linked.svg";
-import Twitter from "../assets/logo/twitter.svg";
 import Footer from "./footer";
 import "../App.css";
 
 function Home() {
-  const Logos = [
-    { id: 1, image: FaceBook },
-    { id: 2, image: Linkedln },
-    { id: 3, image: Twitter },
-  ];
-
   const Blogs = [
     {
       id: 1,

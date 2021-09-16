@@ -2,9 +2,12 @@ import React from "react";
 
 function Patient() {
   return (
-    <div>
-      <h1>PATIENT</h1>
-    </div>
+    <>
+      <div className="mt-5">
+        COMING SOON
+        <h1 className="mt-5">PATIENT</h1>
+      </div>
+    </>
   );
 }
 

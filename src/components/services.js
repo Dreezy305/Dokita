@@ -5,6 +5,7 @@ import Tooth from "../assets/illustration/tooth.svg";
 import Knee from "../assets/illustration/knee.svg";
 import CheckUp from "../assets/illustration/checkup.svg";
 import BloodTest from "../assets/illustration/bloodtest.svg";
+import Footer from "./footer";
 
 function Services() {
   const Services = [
@@ -52,6 +53,8 @@ function Services() {
         </div>
       </section>
       {/* END HIGH QUALITY SERVICES */}
+
+      <Footer />
     </div>
   );
 }
