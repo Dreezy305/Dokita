@@ -98,7 +98,7 @@ in daily diet`,
                 Your Health, Our Priority
               </h2>
               <div className="d-flex flex-row ms-5 justify-content-start mt-5">
-                <Link as={Link} to="./auth/signup" target="_top">
+                <a as={Link} href="/signup" target="_top">
                   <button
                     type="button"
                     className="btn btn-outline-primary ms-5 px-5 btn_hover sm:px-3 "
@@ -106,7 +106,7 @@ in daily diet`,
                   >
                     SIGN UP
                   </button>
-                </Link>
+                </a>
                 <button
                   type="button"
                   className="btn btn-outline-primary ms-3 px-5"

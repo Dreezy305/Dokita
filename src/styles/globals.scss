@@ -137,3 +137,38 @@
     }
   }
 }
+
+.login {
+  & form {
+    & h3 {
+      font-family: "MontessaratSemiBold";
+    }
+    & label {
+      font-family: "MontessaratRegular";
+    }
+    & input {
+      font-family: "MontessaratRegular";
+      font-size: $font-16;
+    }
+    & div {
+      & h6 {
+        font-family: "MontessaratRegular";
+        font-size: $font-16;
+        color: #121212;
+        line-height: $line-height29;
+      }
+      & a {
+        font-family: "MontessaratRegular";
+        color: #121212;
+        line-height: $line-height29;
+      }
+    }
+    & div {
+      button {
+        font-family: "MontessaratLight";
+        border: 1px solid #332da0;
+        color: #332da0;
+      }
+    }
+  }
+}
