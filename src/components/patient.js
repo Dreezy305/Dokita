@@ -11,20 +11,77 @@ function Patient() {
       <div className="container">
         <div className="row gx-5">
           <div className="col-md-6">
-            <img src={Register} alt="sign_up" className="img-fluid" />
+            <img src={Register} alt="sign_up" className="img-fluid pt-5 mt-3" />
           </div>
           <div className="col-md-6">
-            <form onSubmit={handleSubmit}>
-              <h3 style={{ color: "color: rgba(18, 18, 18, 0.6)" }}>
-                Register
-              </h3>
-              <h3
-                className=""
-                style={{ fontSize: "20px", fontFamily: "MontessaratRegular" }}
-              >
-                Your data is safe and secure with us. No third party has access
-                to your infomation
-              </h3>
+            <h3
+              style={{
+                color: " rgba(18, 18, 18, 0.6)",
+                fontFamily: "MontessaratSemiBold",
+              }}
+            >
+              Register
+            </h3>
+            <h3
+              className="mb-3"
+              style={{
+                fontSize: "20px",
+                fontFamily: "MontessaratRegular",
+                color: " rgba(18, 18, 18, 0.6)",
+              }}
+            >
+              Your data is safe and secure with us. No third party has access to
+              your infomation
+            </h3>
+            <form onSubmit={handleSubmit} className="row g-4">
+              <div class="col-md-6">
+                <label className="form-label">First Name</label>
+                <input type="text" className="form-control" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Last Name</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="col-md-4">
+                <label className="form-label">Sex</label>
+                <input type="text" className="form-control" />
+              </div>
+              <div class="col-md-8">
+                <label className="form-label">Date Of Birth</label>
+                <input type="text" className="form-control" />
+              </div>
+              <div class="col-md-4">
+                <label for="inputCity" class="form-label">
+                  City
+                </label>
+                <input type="text" class="form-control" id="inputCity" />
+              </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">
+                  Country
+                </label>
+                <input type="text" class="form-control" id="inputCity" />
+              </div>
+              <div class="col-md-4">
+                <label for="inputZip" class="form-label">
+                  Phone
+                </label>
+                <input type="text" class="form-control" id="inputZip" />
+              </div>
+              <div class="col-12">
+                <label for="inputAddress" class="form-label">
+                  Email
+                </label>
+                <input type="text" className="form-control" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Password</label>
+                <input type="text" className="form-control" />
+              </div>
+              <div class="col-md-6">
+                <label className="form-label">Confirm Password</label>
+                <input type="text" className="form-control" />
+              </div>
             </form>
           </div>
         </div>
