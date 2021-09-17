@@ -1,58 +1,35 @@
 import React from "react";
-//import Login from "../assets/illustration/login.svg";
-import Login from "../auth/login";
+//import Login from "../auth/login";
+import Register from "../assets/illustration/signup.svg";
 
 function Patient() {
-  //const handleSubmit = (e) => {
-  //  e.preventDefault();
-  //};
-
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
-    <Login />
-    //<div className="mt-5 pt-5">
-    //  <div className="container login">
-    //    <div className="row mt-3">
-    //      <div className="col-md-6">
-    //        <img src={Login} className="img-fluid pt-4" alt="login" />
-    //      </div>
-    //      <div className="col-md-6">
-    //        <form onSubmit={handleSubmit}>
-    //          <h3>Welcome Back</h3>
-    //          <h3
-    //            className=""
-    //            style={{ fontSize: "20px", fontFamily: "MontessaratRegular" }}
-    //          >
-    //            To keep connected with us please login with your personal
-    //            information by email address and password
-    //          </h3>
-    //          <label className="mt-4 form-label">Email</label>
-    //          <input type="email" class="form-control" id="inputEmail4" />
-    //          <label className="mt-4 form-label">Password</label>
-    //          <input type="password" class="form-control" id="inputPassword4" />
-    //          <div className="d-flex flx-row justify-content-between mt-3">
-    //            <h6>Remember Me</h6>
-    //            <a href="/">Forget Password?</a>
-    //          </div>
-    //          <div className="d-flex flx-row justify-content-between mt-4">
-    //            <button
-    //              type="button"
-    //              className="btn btn-outline-primary px-4 btn_hover"
-    //            >
-    //              Create Account
-    //            </button>
-    //            <button
-    //              type="button"
-    //              className="btn btn-outline-primary px-5"
-    //              style={{ color: "#ffffff", background: "#332DA0" }}
-    //            >
-    //              LOGIN
-    //            </button>
-    //          </div>
-    //        </form>
-    //      </div>
-    //    </div>
-    //  </div>
-    //</div>
+    <div className="mt-5 pt-5">
+      <div className="container">
+        <div className="row gx-5">
+          <div className="col-md-6">
+            <img src={Register} alt="sign_up" className="img-fluid" />
+          </div>
+          <div className="col-md-6">
+            <form onSubmit={handleSubmit}>
+              <h3 style={{ color: "color: rgba(18, 18, 18, 0.6)" }}>
+                Register
+              </h3>
+              <h3
+                className=""
+                style={{ fontSize: "20px", fontFamily: "MontessaratRegular" }}
+              >
+                Your data is safe and secure with us. No third party has access
+                to your infomation
+              </h3>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 
