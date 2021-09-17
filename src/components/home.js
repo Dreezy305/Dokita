@@ -18,6 +18,7 @@ import Vegie from "../assets/blogs/vegetables.png";
 import Eye from "../assets/blogs/eye.png";
 import Exercise from "../assets/blogs/execise.png";
 import Footer from "./footer";
+import { Link } from "react-router-dom";
 import "../App.css";
 
 function Home() {
@@ -97,13 +98,15 @@ in daily diet`,
                 Your Health, Our Priority
               </h2>
               <div className="d-flex flex-row ms-5 justify-content-start mt-5">
-                <button
-                  type="button"
-                  className="btn btn-outline-primary ms-5 px-5 btn_hover sm:px-3 "
-                  style={{ height: "36px", color: "#332DA0" }}
-                >
-                  SIGN UP
-                </button>
+                <Link as={Link} to="./auth/signup" target="_top">
+                  <button
+                    type="button"
+                    className="btn btn-outline-primary ms-5 px-5 btn_hover sm:px-3 "
+                    style={{ height: "36px", color: "#332DA0" }}
+                  >
+                    SIGN UP
+                  </button>
+                </Link>
                 <button
                   type="button"
                   className="btn btn-outline-primary ms-3 px-5"
