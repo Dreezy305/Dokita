@@ -4,7 +4,7 @@ import Call from "../assets/illustration/call.svg";
 
 function Contact() {
   return (
-    <div>
+    <div className="pt-5">
       <section className="contact mt-5">
         <div className="container mb-5">
           <div className="row text-center d-flex flex-row justify-content-center p-5 ">

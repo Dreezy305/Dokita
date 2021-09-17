@@ -19,7 +19,7 @@ function Services() {
 
   return (
     <div className="mt-5">
-      <section className="services mt-5">
+      <section className="services mt-5 pt-3">
         <h1 className="mt-5 mx-auto d-flex justify-content-center">
           HIGH QUALITY SERVICES
         </h1>

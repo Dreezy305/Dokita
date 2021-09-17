@@ -13,7 +13,7 @@ function About() {
     { id: 4, item: "Quick laboratory test result", icon: CheckCircle },
   ];
   return (
-    <div className="mt-5">
+    <div className="mt-5 pt-1">
       {/* ABOUT US SECTION */}
       <section className="about mt-5">
         <div className="container mt-5 mb-5">
