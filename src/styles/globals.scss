@@ -172,3 +172,17 @@
     }
   }
 }
+
+.signup {
+  & form {
+    & label {
+      font-family: "MontessaratRegular";
+    }
+    & input {
+      font-family: "MontessaratRegular";
+    }
+  }
+  & button {
+    font-family: "MontessaratBold" !important;
+  }
+}

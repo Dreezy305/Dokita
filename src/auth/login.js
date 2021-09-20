@@ -40,7 +40,11 @@ function Login() {
                 <button
                   type="button"
                   className="btn btn-outline-primary px-5"
-                  style={{ color: "#ffffff", background: "#332DA0" }}
+                  style={{
+                    color: "#ffffff",
+                    background: "#332DA0",
+                    border: "1px solid #332DA0",
+                  }}
                 >
                   LOGIN
                 </button>

@@ -8,7 +8,7 @@ function Patient() {
   };
   return (
     <div className="mt-5 pt-5">
-      <div className="container">
+      <div className="container signup">
         <div className="row gx-5">
           <div className="col-md-6">
             <img src={Register} alt="sign_up" className="img-fluid pt-5 mt-3" />
@@ -25,7 +25,7 @@ function Patient() {
             <h3
               className="mb-3"
               style={{
-                fontSize: "20px",
+                fontSize: "16px",
                 fontFamily: "MontessaratRegular",
                 color: " rgba(18, 18, 18, 0.6)",
               }}
@@ -83,6 +83,13 @@ function Patient() {
                 <input type="text" className="form-control" />
               </div>
             </form>
+            <button
+              type="button"
+              className="mt-3 mb-5 float-end btn btn-outline-primary px-5"
+              style={{ color: "#ffffff", background: "#332DA0" }}
+            >
+              SIGNUP
+            </button>
           </div>
         </div>
       </div>
