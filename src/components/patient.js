@@ -3,9 +3,7 @@ import React from "react";
 import SignUp from "../auth/signup";
 
 function Patient() {
-  //const handleSubmit = (e) => {
-  //  e.preventDefault();
-  //};
+  
   return <SignUp />;
 }
 
