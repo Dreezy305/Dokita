@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import LoginSVG from "../assets/illustration/login.svg";
 
 function Login() {
@@ -60,17 +61,19 @@ function Login() {
                   >
                     Create Account
                   </button>
-                  <button
-                    type="button"
-                    className="btn btn-outline-primary px-5"
-                    style={{
-                      color: "#ffffff",
-                      background: "#332DA0",
-                      border: "1px solid #332DA0",
-                    }}
-                  >
-                    LOGIN
-                  </button>
+                  <a as={Link} href="/dashboard" target="_top">
+                    <button
+                      type="button"
+                      className="btn btn-outline-primary px-5"
+                      style={{
+                        color: "#ffffff",
+                        background: "#332DA0",
+                        border: "1px solid #332DA0",
+                      }}
+                    >
+                      LOGIN
+                    </button>
+                  </a>
                 </div>
               </form>
             </div>
