@@ -7,6 +7,8 @@ import Blog from "./components/blog";
 import Patient from "./components/patient";
 import Contact from "./components/contact";
 import Services from "./components/services";
+import Login from "./auth/login";
+import SignUp from "./auth/signup";
 
 function App() {
   const RoutesList = [
@@ -16,6 +18,8 @@ function App() {
     { id: 4, Component: Services, path: "/services", title: "Services" },
     { id: 5, Component: Blog, path: "/blog", title: "Blog" },
     { id: 6, Component: Contact, path: "/contact", title: "Contact" },
+    { id: 7, Component: Login, path: "/login", title: "Login" },
+    { id: 8, Component: SignUp, path: "/signup", title: "SignUp" },
   ];
 
   return (

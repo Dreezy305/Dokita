@@ -1,10 +1,8 @@
 import React from "react";
-//import Login from "../auth/login";
-import SignUp from "../auth/signup";
+import Login from "../auth/login";
 
 function Patient() {
-  
-  return <SignUp />;
+  return <Login />;
 }
 
 export default Patient;
