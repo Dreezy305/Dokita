@@ -1,10 +1,10 @@
 import React from "react";
-import SideBar from "./sidebar";
+import LeftSideBar from "./leftsidebar";
 
 function Layout() {
   return (
     <>
-      <SideBar />
+      <LeftSideBar />
     </>
   );
 }

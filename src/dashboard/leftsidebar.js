@@ -1,6 +1,6 @@
 import React from "react";
 
-function SideBar() {
+function LeftSideBar() {
   const SideBarSection = () => {};
   return (
     <div>
@@ -9,4 +9,4 @@ function SideBar() {
   );
 }
 
-export default SideBar;
+export default LeftSideBar;
