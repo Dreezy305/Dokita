@@ -55,12 +55,14 @@ function Login() {
                   <a href="/">Forget Password?</a>
                 </div>
                 <div className="d-flex flx-row justify-content-between mt-4">
-                  <button
-                    type="button"
-                    className="btn btn-outline-primary px-4 btn_hover"
-                  >
-                    Create Account
-                  </button>
+                  <a as={Link} href="/signup" target="_top">
+                    <button
+                      type="button"
+                      className="btn btn-outline-primary px-4 btn_hover"
+                    >
+                      Create Account
+                    </button>
+                  </a>
                   <a as={Link} href="/dashboard" target="_top">
                     <button
                       type="button"
