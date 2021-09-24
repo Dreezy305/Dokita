@@ -10,7 +10,7 @@ import Billing from "../assets/icons/billing.svg";
 
 function LeftSideBar() {
   const menus = [
-    { id: 1, icon: Dashboard, title: "Dshboard", link: "" },
+    { id: 1, icon: Dashboard, title: "Dashboard", link: "" },
     { id: 2, icon: Doctors, title: "Doctors", link: "/doctors" },
     { id: 3, icon: Appointment, title: "Appointments", link: "/appointments" },
     { id: 4, icon: Billing, title: "Billing", link: "/billing" },
@@ -40,10 +40,7 @@ function LeftSideBar() {
   };
 
   return (
-    <div
-      className="leftsidebar"
-      style={{ width: "200px", background: "#332DA0", height: "100vh" }}
-    >
+    <div className="leftsidebar">
       <p className="ms-5 mb-5">Dokita</p>
       {menus.map((menu) => (
         <SideBarSection image={menu.icon} title={menu.title} link={menu.link} />

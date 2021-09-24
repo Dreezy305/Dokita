@@ -189,14 +189,26 @@
 
 .leftsidebar {
   background: #332da0;
+  width: 220px;
+  height: 100vh;
+  border-radius: 0px 30px 30px 0px;
   & p {
     color: #ffffff;
-    //margin-top: 40px;
+    margin-bottom: 80px !important;
+    padding-top: 60px !important;
+    font-family: "OpenSansBold";
+    font-size: $font-24;
+    line-height: $line-height32;
   }
   & ul {
     list-style-type: none;
     color: #ffffff;
     cursor: pointer;
     margin-top: 30px !important;
+    & p {
+      font-family: "MontessaratMedium" !important;
+      font-size: $font-18 !important;
+      line-height: $line-height22;
+    }
   }
 }
