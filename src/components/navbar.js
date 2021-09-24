@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "../styles/globals.scss";
 import "../App.css";
 
-function NavBar() {
+function NavBar({ display = "", items }) {
   const RoutesList = [
     { id: 1, path: "/", title: "Home" },
     { id: 2, path: "/about", title: "About" },
