@@ -23,11 +23,7 @@ function LeftSideBar() {
 
     return (
       <>
-        <ul
-          className="mt-5"
-          style={{ listStyleType: "none", cursor: "pointer" }}
-          onClick={() => history.push(link)}
-        >
+        <ul className="mt-3 sidelist" onClick={() => history.push(link)}>
           <li className="d-inline-block">
             <img src={image} className="float-left me-2" alt="logo_icon" />
             <p className="d-inline text-end ms-1">{title}</p>
@@ -44,8 +40,11 @@ function LeftSideBar() {
   };
 
   return (
-    <div className="" style={{ width: "250px" }}>
-      <p>Dokita</p>
+    <div
+      className="leftsidebar"
+      style={{ width: "200px", background: "#332DA0", height: "100vh" }}
+    >
+      <p className="ms-5 mb-5">Dokita</p>
       {menus.map((menu) => (
         <SideBarSection image={menu.icon} title={menu.title} link={menu.link} />
       ))}

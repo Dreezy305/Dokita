@@ -186,3 +186,17 @@
     font-family: "MontessaratBold" !important;
   }
 }
+
+.leftsidebar {
+  background: #332da0;
+  & p {
+    color: #ffffff;
+    //margin-top: 40px;
+  }
+  & ul {
+    list-style-type: none;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 30px !important;
+  }
+}
