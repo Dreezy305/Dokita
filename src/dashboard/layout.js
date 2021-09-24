@@ -1,10 +1,11 @@
 import React from "react";
+import SideBar from "./sidebar";
 
 function Layout() {
   return (
-    <div>
-      <h1>Dashboard is coming soon</h1>
-    </div>
+    <>
+      <SideBar />
+    </>
   );
 }
 
