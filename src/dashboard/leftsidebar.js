@@ -23,7 +23,7 @@ function LeftSideBar() {
 
     return (
       <>
-        <ul className="mt-3 sidelist" onClick={() => history.push(link)}>
+        <ul className="mt-2 sidelist" onClick={() => history.push(link)}>
           <li className="d-inline-block">
             <img src={image} className="float-left me-2" alt="logo_icon" />
             <p className="d-inline text-end ms-1">{title}</p>
