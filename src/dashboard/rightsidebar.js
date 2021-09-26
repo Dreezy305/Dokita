@@ -1,4 +1,5 @@
 import React from "react";
+import { Month } from "../data/month";
 
 function RightSideBar() {
   const medicals = [
@@ -22,7 +23,9 @@ daily`,
     <>
       <div className="container float-end w-25 rightsidebar">
         <div className="row d-flex flex-col mt-5">
-          <h4 className="mb-2">August 2021</h4>
+          <h4 className="mb-2">
+            {Month[new Date().getMonth()]}, {new Date().getFullYear()}
+          </h4>
           <div className="mt-2 mb-2"></div>
           <h5 className="card-title">Medical History</h5>
           <div

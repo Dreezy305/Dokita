@@ -10,9 +10,20 @@ function TopBar() {
       </>
     );
   };
+
+  const BottomSection = () => {
+    return (
+      <>
+        <div className="card w-75">
+          <h1>Bottom section</h1>
+        </div>
+      </>
+    );
+  };
   return (
-    <div className="d-flex flex-col w-75 topbar">
+    <div className="d-flex flex-row w-100 topbar">
       <TopSection />
+      {/*<BottomSection />*/}
     </div>
   );
 }
