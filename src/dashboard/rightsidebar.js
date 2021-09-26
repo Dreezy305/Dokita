@@ -20,13 +20,13 @@ daily`,
   ];
   return (
     <>
-      <div className="container float-end w-25">
-        <div className="row d-flex flex-col">
-          <h4>August 2021</h4>
+      <div className="container float-end w-25 rightsidebar">
+        <div className="row d-flex flex-col mt-5">
+          <h4 className="mb-2">August 2021</h4>
           <div className="mt-2 mb-2"></div>
           <h5 className="card-title">Medical History</h5>
           <div
-            className="card"
+            className="card mb-2 "
             style={{
               width: "250px",
               border: "1px solid rgba(51, 45, 160, 0.2)",
@@ -46,7 +46,7 @@ daily`,
           <div className="mt-2 mb-2"></div>
           <h5 className="card-title">Basic Health Tips</h5>
           <div
-            className="card"
+            className="card "
             style={{
               width: "250px",
               border: "1px solid rgba(51, 45, 160, 0.2)",
@@ -55,9 +55,9 @@ daily`,
           >
             <div className="card-body">
               <ul className="" style={{ listStyle: "none" }}>
-                {medicals.map((item) => (
-                  <li key={item.id} className="pb-2">
-                    {item.title}
+                {tips.map((tip) => (
+                  <li key={tip.id} className="pb-2">
+                    {tip.title}
                   </li>
                 ))}
               </ul>
