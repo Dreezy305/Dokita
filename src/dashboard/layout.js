@@ -1,14 +1,16 @@
 import React from "react";
 import LeftSideBar from "./leftsidebar";
-//import RightSideBar from "./rightsidebar";
+import RightSideBar from "./rightsidebar";
 //import TopBar from "./topbar";
 
 function Layout() {
   return (
     <>
-      <LeftSideBar />
-      {/*<RightSideBar />*/}
-      {/*<TopBar />*/}
+      <div className="d-flex flex-row justify-content-evenly">
+        <LeftSideBar />
+        <RightSideBar />
+        {/*<TopBar />*/}
+      </div>
     </>
   );
 }
