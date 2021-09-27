@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import LoginSVG from "../assets/illustration/login.svg";
+//import { Eye } from "tabler-icons-react";
 
 function Login() {
+  const [passwordShow, setPasswordShow] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
   };
@@ -43,13 +45,21 @@ function Login() {
                   information by email address and password
                 </h3>
                 <label className="mt-4 form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" />
-                <label className="mt-4 form-label">Password</label>
                 <input
-                  type="password"
+                  type="email"
+                  name="email"
                   class="form-control"
+                  id="inputEmail4"
+                />
+                <label className="mt-4 form-label">Password</label>
+                {/*<Eye className="position absolute" />*/}
+                <input
+                  name="password"
+                  type="password"
+                  class="form-control "
                   id="inputPassword4"
                 />
+
                 <div className="d-flex flx-row justify-content-between mt-3">
                   <h6>Remember Me</h6>
                   <a href="/">Forget Password?</a>
