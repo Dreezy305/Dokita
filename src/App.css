@@ -18,3 +18,19 @@
   color: #ffffff !important;
   background-color: #332da0 !important;
 }
+
+.eye {
+  position: absolute;
+  top: 57.8%;
+  right: 10%;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.eye-slash {
+  position: absolute;
+  top: 57.8%;
+  right: 10%;
+  cursor: pointer;
+  z-index: 1000;
+}

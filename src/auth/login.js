@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import LoginSVG from "../assets/illustration/login.svg";
-//import { Eye } from "tabler-icons-react";
+import Eye from "../assets/icons/eye.svg";
+import EyeSlash from "../assets/icons/eye_slach.svg";
 
 function Login() {
-  const [passwordShow, setPasswordShow] = useState(false);
+  const [visible, setVisible] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
   };
@@ -52,14 +53,32 @@ function Login() {
                   id="inputEmail4"
                 />
                 <label className="mt-4 form-label">Password</label>
-                {/*<Eye className="position absolute" />*/}
+
                 <input
                   name="password"
-                  type="password"
+                  type={visible ? "text" : "password"}
                   class="form-control "
                   id="inputPassword4"
                 />
-
+                {visible ? (
+                  <>
+                    <img
+                      src={EyeSlash}
+                      alt="eye_slash"
+                      className="eye-slash"
+                      onClick={() => setVisible(!visible)}
+                    />
+                  </>
+                ) : (
+                  <>
+                    <img
+                      src={Eye}
+                      alt="eye_icon"
+                      onClick={() => setVisible(!visible)}
+                      className="eye"
+                    />
+                  </>
+                )}
                 <div className="d-flex flx-row justify-content-between mt-3">
                   <h6>Remember Me</h6>
                   <a href="/">Forget Password?</a>
