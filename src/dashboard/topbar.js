@@ -1,13 +1,34 @@
 import React from "react";
 import Dp from "../assets/team/dp.png";
+import Ellipse15 from "../assets/dashboard/Ellipse-15.png";
+import Ellipse16 from "../assets/dashboard/Ellipse-16.png";
+import Ellipse17 from "../assets/dashboard/Ellipse-17.png";
+import Ellipse18 from "../assets/dashboard/Ellipse-18.png";
+import Ellipse19 from "../assets/dashboard/Ellipse-19.png";
+import Ellipse20 from "../assets/dashboard/Ellipse-20.png";
+
+const doctors = [
+  { id: 1, image: Ellipse15, name: "Kemi Johnson", role: "Consultant" },
+  { id: 2, image: Ellipse16, name: "Abu Thomas", role: "Cardiologist" },
+  { id: 3, image: Ellipse17, name: "Joseph Obinna", role: "Consultant" },
+  { id: 4, image: Ellipse18, name: "Busola Amadu", role: "Ophtalmologist" },
+  { id: 5, image: Ellipse19, name: "Henny Basil", role: "Consultant" },
+  { id: 6, image: Ellipse20, name: "Daves Yahaya", role: "Dentist" },
+  { id: 6, image: Ellipse20, name: "Daves Yahaya", role: "Dentist" },
+  { id: 6, image: Ellipse20, name: "Daves Yahaya", role: "Dentist" },
+];
 
 function TopBar() {
   const TopSection = () => {
     return (
       <>
         <div
-          className="card mx-auto mt-5 mb-5 me-5 topsection"
-          style={{ width: "90%", borderRadius: "20px" }}
+          className="card mx-auto mt-2 mb-2 me-5 topsection"
+          style={{
+            width: "90%",
+            borderRadius: "20px",
+            border: "1px solid rgba(51, 45, 160, 0.2)",
+          }}
         >
           <div className="d-flex flex-row">
             {/* 1st width */}
@@ -79,16 +100,41 @@ function TopBar() {
     return (
       <>
         <div
-          className="card  mx-auto mt-1 bottomsection"
-          style={{ width: "90%" }}
+          className="card  mx-auto mt-3 bottomsection p-2"
+          style={{
+            width: "90%",
+            borderRadius: "20px",
+            border: "1px solid rgba(51, 45, 160, 0.2)",
+          }}
         >
-          <div className="d-flex flex-row">Bottom section</div>
+          <div className="row">
+            {doctors.map((doctor) => (
+              <div className="w-25">
+                <img
+                  src={doctor.image}
+                  alt="doctors_png"
+                  className="img-fluid p-2"
+                  key={doctor.id}
+                  style={{
+                    width: "150px",
+                    height: "150px",
+                    //objectFit: "contain",
+                    //overflow: "hidden",
+                  }}
+                />
+                <div className="text-center">
+                  <h5>{doctor.name}</h5>
+                  <h6>{doctor.role}</h6>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </>
     );
   };
   return (
-    <div className="w-75 topbar ">
+    <div className="w-75 topbar pb-2 ">
       <TopSection />
       <BottomSection />
     </div>
