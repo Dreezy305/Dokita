@@ -262,3 +262,18 @@
 .topbar {
   width: 60%;
 }
+
+.topsection {
+  & h5 {
+    font-family: "MontessaratBold";
+    color: #332da0;
+  }
+  & h6 {
+    font-family: "MontessaratRegular";
+    color: #332da0;
+  }
+  & p {
+    font-family: "MontessaratRegular";
+    color: #332da0;
+  }
+}

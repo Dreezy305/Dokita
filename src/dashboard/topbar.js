@@ -37,11 +37,11 @@ function TopBar() {
                 className="container pt-3 px-3"
                 style={{ background: "#EEEEEE", borderRadius: "20px" }}
               >
-                <div className="row mb-4">
+                <div className="row mb-4 ">
                   <div className="col-sm-4">
                     <img src={Dp} className="" alt="display_ptr" />
                   </div>
-                  <div className="col-sm-5 justify-content-center">
+                  <div className="col-sm-6 justify-content-center">
                     <h5>Jacobs Taylor</h5>
                     <p>28 years</p>
                   </div>
@@ -134,7 +134,7 @@ function TopBar() {
     );
   };
   return (
-    <div className="w-75 topbar pb-2 ">
+    <div className="w-75 topbar pb-1 ">
       <TopSection />
       <BottomSection />
     </div>
