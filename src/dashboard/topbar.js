@@ -70,22 +70,22 @@ function TopBar() {
                 <div className="row mb-3">
                   <div className="col-sm-5">
                     <h6>Phone Number</h6>
-                    <p>0998345884</p>
+                    <p className="fw-bold">0998345884</p>
                   </div>
                   <div className="col-sm-7">
                     <h6>Email</h6>
-                    <p>jacobstobi@gmail.com</p>
+                    <p className="fw-bold">jacobstobi@gmail.com</p>
                   </div>
                 </div>
                 {/* 2nd width */}
                 <div className="row mt-3">
                   <div className="col-sm-5">
                     <h6>Card Number</h6>
-                    <p>23124900</p>
+                    <p className="fw-bold">23124900</p>
                   </div>
                   <div className="col-sm-7">
                     <h6>Medical Condition</h6>
-                    <p>Alergies, Astma </p>
+                    <p className="fw-bold">Alergies, Astma </p>
                   </div>
                 </div>
               </div>
@@ -118,12 +118,13 @@ function TopBar() {
                   style={{
                     width: "150px",
                     height: "150px",
-                    //objectFit: "contain",
-                    //overflow: "hidden",
                   }}
                 />
-                <div className="text-center">
-                  <h5>{doctor.name}</h5>
+                <div
+                  className="text-center"
+                  style={{ background: "#EEEEEE", borderRadius: "0px 20px" }}
+                >
+                  <h5 className="fw-bold">{doctor.name}</h5>
                   <h6>{doctor.role}</h6>
                 </div>
               </div>

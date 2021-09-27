@@ -277,3 +277,16 @@
     color: #332da0;
   }
 }
+
+.bottomsection {
+  & h5 {
+    font-family: "MontessaratMedium";
+    font-size: $font-16;
+    color: #121212;
+  }
+  & h6 {
+    font-family: "MontessaratRegular";
+    font-size: $font-12;
+    color: #121212;
+  }
+}
