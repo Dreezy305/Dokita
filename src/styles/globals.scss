@@ -417,6 +417,14 @@
       margin-top: 35px;
     }
   }
+  .services {
+    h1 {
+      margin: auto;
+      font-size: 20px;
+    }
+    &_header {
+    }
+  }
 }
 
 @media screen and (max-width: 720px) {
