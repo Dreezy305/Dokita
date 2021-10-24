@@ -81,8 +81,7 @@ in daily diet`,
                 <a as={Link} href="/signup" target="_top">
                   <button
                     type="button"
-                    className="btn btn-outline-primary ms-5 px-5 btn_hover sm:px-3 "
-                    style={{ height: "36px", color: "#332DA0" }}
+                    className="btn btn-outline-primary ms-5 px-5 btn_hover sm:px-3 home_signup"
                   >
                     SIGN UP
                   </button>
@@ -90,12 +89,7 @@ in daily diet`,
                 <a as={Link} href="/login" target="_top">
                   <button
                     type="button"
-                    className="btn btn-outline-primary ms-3 px-5"
-                    style={{
-                      height: "36px",
-                      color: "#ffffff",
-                      background: "#332DA0",
-                    }}
+                    className="btn btn-outline-primary ms-3 px-5 home_login"
                   >
                     LOGIN
                   </button>
