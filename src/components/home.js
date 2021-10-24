@@ -20,6 +20,7 @@ import Exercise from "../assets/blogs/execise.png";
 import Footer from "./footer";
 import { Link } from "react-router-dom";
 import "../App.css";
+import styles from "../styles/globals.scss";
 
 function Home() {
   const Blogs = [
@@ -68,7 +69,7 @@ in daily diet`,
   ];
 
   return (
-    <main>
+    <main className="home">
       {/* INTRO SECTION  */}
       <section className="mt-5 mb-3">
         <div className="container  mx-auto mt-5 mb-5">
@@ -126,7 +127,7 @@ in daily diet`,
               <img
                 src={MedicalGroup}
                 alt="illustration"
-                className="img-fluid mb-5 mt-5"
+                className="img-fluid mb-5 mt-5 animate_img"
               />
             </div>
           </div>
@@ -137,7 +138,7 @@ in daily diet`,
       {/* ABOUT US SECTION */}
       <section className="about mt-5">
         <div className="container mt-5 mb-5">
-          <div className="row">
+          <div className={`row ${styles.whyChooseUs}`}>
             <div className="col-md-6 mt-4">
               <img src={NursesGroup} alt="nurses" className="img-fluid mb-5" />
             </div>
@@ -168,10 +169,10 @@ in daily diet`,
       {/* WHY US SECTION */}
       <section className="why">
         <div className="container mt-5 mb-5">
-          <div className="row">
+          <div className={`row `}>
             <div className="col-md-6 mt-5 why__card">
               <div
-                className="card mt-5 w-75"
+                className='card mt-5 w-75 whyUs'
                 style={{
                   borderRadius: "15px",
                   border: "1px solid rgba(54, 209, 219, 0.2)",
@@ -199,7 +200,7 @@ in daily diet`,
               <img
                 src={Researcher}
                 alt="researcher"
-                className="img-fluid mb-5"
+                className="img-fluid mb-5 whyUs_img"
               />
             </div>
           </div>
@@ -217,15 +218,11 @@ in daily diet`,
             <h1 className="ms-5">Premium </h1>
             <p className="ms-5">HEALTHCARE</p>
 
-            <div className="d-flex flex-wrap justify-content-center services_card">
+            <div className="d-flex flex-wrap justify-content-center">
               {Services.map((item) => (
                 <div
-                  className="card w-25 text-center m-4"
-                  style={{
-                    borderRadius: "10px",
-                    border: "1px solid rgba(54, 209, 219, 0.2)",
-                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
-                  }}
+                  className='card w-25 text-center m-4 servicesCard'
+                  
                 >
                   <div className="card-body">
                     <img
@@ -249,24 +246,14 @@ in daily diet`,
           OUR DEDICATED DOCTORS TEAM
         </h1>
         <div className="container mb-5">
-          <div className="row">
+          <div className="row cardCenter">
             {Teams.map((team) => (
               <div
-                className="card w-25 border-0 team_card "
-                style={{
-                  borderRadius: "10px",
-                  overflow: "hidden",
-                }}
-              >
+                className="card w-25 border-0 team_card " >
                 <img
                   src={team.image}
                   alt="team"
                   className=""
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    overflow: "hidden",
-                  }}
                 />
                 <div className="card-body text-center">
                   <h5>{team.name}</h5>

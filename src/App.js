@@ -30,7 +30,7 @@ function App() {
           <Route exact path="/signup" component={SignUp} />
           <Route exact path="/dashboard" component={Layout} />
           <div>
-            <NavBar />
+            {/*<NavBar />*/}
             {RoutesList.map((Routes) => (
               <Route
                 exact

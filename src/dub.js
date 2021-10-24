@@ -1,22 +1,5 @@
-import React, { useState } from "react";
-import "bootstrap/dist/css/bootstrap.css";
-import { Link } from "react-router-dom";
-import styles from "../styles/globals.scss";
-import "../App.css";
-
-function NavBar() {
-  const [showMenu, setShowMenu] = useState(false);
-
-  const RoutesList = [
-    { id: 1, path: "/", title: "Home" },
-    { id: 2, path: "/about", title: "About" },
-    { id: 3, path: "/patient", title: "Patient Portal" },
-    { id: 4, path: "/services", title: "Services" },
-    { id: 5, path: "/blog", title: "Blog" },
-    { id: 6, path: "/contact", title: "Contact" },
-  ];
-  return (
-    <nav className="navbar navbar-expand-lg navbar-light menu fixed-top">
+{
+  /*<nav className="navbar navbar-expand-lg navbar-light menu fixed-top">
   <div className="container-fluid menu__anchor">
     <a
       className="navbar-brand ms-5"
@@ -76,10 +59,5 @@ function NavBar() {
       </ul>
     </div>
   </div>
-</nav>
-
-
-  );
+</nav>;*/
 }
-
-export default NavBar;
