@@ -321,7 +321,6 @@
   }
 }
 
-
 /**MOBILE RESPONSIVENESS STYLES */
 @media screen and (max-width: 576px) {
   .menuContainer {
@@ -337,7 +336,6 @@
       margin-right: 10px;
     }
   }
-  
 }
 
 @media screen and (max-width: 720px) {
@@ -349,15 +347,18 @@
   }
   .team {
     h1 {
-    margin: auto !important;
-    font-size: 25px;
-    margin-bottom: 20px !important;
+      margin: auto !important;
+      font-size: 25px;
+      margin-bottom: 20px !important;
     }
     &_card {
       width: 40% !important;
-      img {}
-      h5 {}
-      h6 {}
+      img {
+      }
+      h5 {
+      }
+      h6 {
+      }
     }
   }
   .cardCenter {
@@ -371,5 +372,22 @@
   .contact_col2 {
     margin-left: 180px;
     margin-top: 20px;
+  }
+  .blog {
+    h5 {
+      font-size: 14px;
+    }
+  }
+  .footer_row {
+    margin-left: 175px;
+  }
+  .footer_p1 {
+    margin-left: 16px !important;
+  }
+  .footer_p {
+    margin-left: -54px !important;
+  }
+  .footer-p0 {
+    margin-left: 30px !important;
   }
 }

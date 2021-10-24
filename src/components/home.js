@@ -172,7 +172,7 @@ in daily diet`,
           <div className={`row `}>
             <div className="col-md-6 mt-5 why__card">
               <div
-                className='card mt-5 w-75 whyUs'
+                className="card mt-5 w-75 whyUs"
                 style={{
                   borderRadius: "15px",
                   border: "1px solid rgba(54, 209, 219, 0.2)",
@@ -220,10 +220,7 @@ in daily diet`,
 
             <div className="d-flex flex-wrap justify-content-center">
               {Services.map((item) => (
-                <div
-                  className='card w-25 text-center m-4 servicesCard'
-                  
-                >
+                <div className="card w-25 text-center m-4 servicesCard">
                   <div className="card-body">
                     <img
                       src={item.item}
@@ -248,13 +245,8 @@ in daily diet`,
         <div className="container mb-5">
           <div className="row cardCenter">
             {Teams.map((team) => (
-              <div
-                className="card w-25 border-0 team_card " >
-                <img
-                  src={team.image}
-                  alt="team"
-                  className=""
-                />
+              <div className="card w-25 border-0 team_card blog">
+                <img src={team.image} alt="team" className="" />
                 <div className="card-body text-center">
                   <h5>{team.name}</h5>
                   <h6>{team.role}</h6>
@@ -302,7 +294,7 @@ in daily diet`,
           <div className="row d-flex flex-row justify-content-center ">
             {Blogs.map((blog) => (
               <div
-                className="card w-25 border-0 team_card "
+                className="card w-25 border-0 team_card blog"
                 style={{
                   borderRadius: "10px",
                   overflow: "hidden",
