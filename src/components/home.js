@@ -142,17 +142,10 @@ in daily diet`,
       {/* WHY US SECTION */}
       <section className="why">
         <div className="container mt-5 mb-5">
-          <div className={`row `}>
-            <div className="col-md-6 mt-5 why__card">
-              <div
-                className="card mt-5 w-75 whyUs"
-                style={{
-                  borderRadius: "15px",
-                  border: "1px solid rgba(54, 209, 219, 0.2)",
-                  filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
-                }}
-              >
-                <div className="card-body pt-5 pb-5 px-3 pe-5 why__cardbody">
+          <div className="row mx-auto ">
+            <div className="col-md-6 mt-5">
+              <div className="card mt-5 w-75 whyUs why_card">
+                <div className="card-body pt-5 pb-5 px-3 pe-5 why_cardbody">
                   <h5 class="card-title ms-4 mb-4">Why choosing Us?</h5>
                   <ul className="" style={{ listStyleType: "none" }}>
                     {Why.map((item) => (
@@ -169,7 +162,7 @@ in daily diet`,
                 </div>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 whyUs_imgcol">
               <img
                 src={Researcher}
                 alt="researcher"
