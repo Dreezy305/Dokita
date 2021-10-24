@@ -8,6 +8,21 @@
 
 .home {
   font-family: "MontessaratSemiBold";
+  &_text {
+    h2 {
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 59px;
+    }
+    h3 {
+      font-size: 24px;
+      line-height: 29px;
+      font-weight: 500;
+      font-style: normal;
+      font-family: MontessaratMedium;
+    }
+  }
   button {
     font-family: "MontessaratSemiBold";
     font-size: $font-16;
@@ -323,6 +338,9 @@
 
 /**MOBILE RESPONSIVENESS STYLES */
 @media screen and (max-width: 576px) {
+  .home {
+    overflow: hidden !important;
+  }
   .menuContainer {
     display: inline-block !important;
     overflow: hidden;
@@ -335,6 +353,12 @@
       margin-left: 10px !important;
       margin-right: 10px;
     }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .main {
+    overflow: hidden !important;
   }
 }
 

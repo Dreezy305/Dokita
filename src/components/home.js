@@ -69,35 +69,14 @@ in daily diet`,
   ];
 
   return (
-    <main className="home">
+    <main className="main">
       {/* INTRO SECTION  */}
       <section className="mt-5 mb-3">
         <div className="container  mx-auto mt-5 mb-5">
           <div className="row text-center home">
-            <div className="col-md-6 align-items-start mt-5 home__text">
-              <h2
-                className="mt-5"
-                style={{
-                  fontSize: "32px",
-                  fontStyle: "normal",
-                  fontWeight: "600",
-                  lineHeight: "59px",
-                }}
-              >
-                LET’S TAKE CARE OF YOU
-              </h2>
-              <h2
-                className=""
-                style={{
-                  fontSize: "24px",
-                  lineHeight: "29px",
-                  fontWeight: "500",
-                  fontStyle: "normal",
-                  fontFamily: "MontessaratMedium",
-                }}
-              >
-                Your Health, Our Priority
-              </h2>
+            <div className="col-md-6 align-items-start mt-5 home_text">
+              <h2 className="mt-5">LET’S TAKE CARE OF YOU</h2>
+              <h3 className="">Your Health, Our Priority</h3>
               <div className="d-flex flex-row ms-5 justify-content-start mt-5">
                 <a as={Link} href="/signup" target="_top">
                   <button

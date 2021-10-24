@@ -43,7 +43,7 @@
 
 /** MOBILE RESPONSIVENES*/
 @media screen and (max-width: 720px) {
-  .home {
+  .main {
     overflow: hidden !important;
   }
   .whyUs {
@@ -56,5 +56,4 @@
   .servicesCard {
     width: 40% !important;
   }
-  
 }
