@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import MedicalGroup from "../assets/illustration/undraw_medical.svg";
 import NursesGroup from "../assets/illustration/undraw_nurses.svg";
 import Researcher from "../assets/illustration/undraw_researcher.svg";
@@ -20,9 +20,20 @@ import Exercise from "../assets/blogs/execise.png";
 import Footer from "./footer";
 import { Link } from "react-router-dom";
 import "../App.css";
-import styles from "../styles/globals.scss";
+import "../styles/globals.scss";
 
 function Home() {
+  const [mediaWith, setMediaWith] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth === 360) {
+        setMediaWith(true);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+  }, []);
   const Blogs = [
     {
       id: 1,
@@ -186,7 +197,11 @@ in daily diet`,
 
             <div className="d-flex flex-wrap justify-content-center services_cardContainer">
               {Services.map((item) => (
-                <div className="card w-25 text-center m-4  servicesCard">
+                <div
+                  className={`card w-25 text-center m-4  servicesCard ${
+                    mediaWith ? "MediaCardWith" : ""
+                  }`}
+                >
                   <div className="card-body">
                     <img
                       src={item.item}

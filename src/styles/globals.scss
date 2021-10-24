@@ -350,6 +350,10 @@
   }
 }
 
+.MediaCardWith {
+  width: 80% !important;
+}
+
 /**MOBILE RESPONSIVENESS STYLES */
 @media screen and (max-width: 576px) {
   .home {
@@ -424,9 +428,24 @@
     }
     &_header {
     }
+    &_cardContainer {
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: center !important;
+    }
   }
-  &_cardContainer {
-    //width: 200px !important;
+  .MediaCardWith {
+    width: 80% !important;
+  }
+  .team {
+    h1 {
+      font-size: 18px !important;
+    }
+    &_card {
+      h6 {
+        //font-size: 15px !important;
+      }
+    }
   }
 }
 
