@@ -77,7 +77,7 @@ in daily diet`,
             <div className="col-md-6 align-items-start mt-5 home_text">
               <h2 className="mt-5">LET’S TAKE CARE OF YOU</h2>
               <h3 className="">Your Health, Our Priority</h3>
-              <div className="d-flex flex-row ms-5 justify-content-start mt-5">
+              <div className="d-flex flex-row ms-5 justify-content-start mt-5 home_buttons">
                 <a as={Link} href="/signup" target="_top">
                   <button
                     type="button"
@@ -111,11 +111,11 @@ in daily diet`,
       {/* ABOUT US SECTION */}
       <section className="about mt-5">
         <div className="container mt-5 mb-5">
-          <div className={`row ${styles.whyChooseUs}`}>
+          <div className="row whyChooseUs">
             <div className="col-md-6 mt-4">
               <img src={NursesGroup} alt="nurses" className="img-fluid mb-5" />
             </div>
-            <div className="col-md-6 mt-4">
+            <div className="col-md-6 mt-4 whyChooseUs_text">
               <h1 className="mb-3">
                 We are the best clinic in the city, Know about us
               </h1>

@@ -357,17 +357,39 @@
     margin-left: 50px;
     z-index: 5;
   }
-  .whyChooseUs {
-    img {
-      margin-left: 10px !important;
-      margin-right: 10px;
-    }
-  }
 }
 
 @media screen and (max-width: 640px) {
   .main {
     overflow: hidden !important;
+  }
+  .home {
+    &_text {
+      h2 {
+        font-size: 25px;
+      }
+    }
+    &_signup {
+      white-space: nowrap;
+      margin-bottom: 15px;
+      margin-left: 20px !important;
+    }
+    &_buttons {
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: center !important;
+      width: 200px;
+      margin-bottom: 20px;
+    }
+  }
+  .whyChooseUs {
+    &_text {
+      h1 {
+        font-size: 20px !important;
+        width: 80% !important;
+        margin: auto !important;
+      }
+    }
   }
 }
 
