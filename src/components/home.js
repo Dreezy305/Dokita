@@ -184,9 +184,9 @@ in daily diet`,
             <h1 className="ms-5">Premium </h1>
             <p className="ms-5">HEALTHCARE</p>
 
-            <div className="d-flex flex-wrap justify-content-center">
+            <div className="d-flex flex-wrap justify-content-center services_cardContainer">
               {Services.map((item) => (
-                <div className="card w-25 text-center m-4 servicesCard">
+                <div className="card w-25 text-center m-4  servicesCard">
                   <div className="card-body">
                     <img
                       src={item.item}

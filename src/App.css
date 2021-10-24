@@ -58,8 +58,14 @@
   }
 }
 
-@media screen and (max-width: 640px) {
+/*@media screen and (max-width: 576px) {
   .servicesCard {
     width: 200px !important;
   }
 }
+
+@media screen and (max-width: 640px) {
+  .servicesCard {
+    width: 200px !important;
+  }
+}*/
