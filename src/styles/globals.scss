@@ -454,7 +454,9 @@
     margin: auto !important;
   }
   .servicesCard {
-    width: 40% !important;
+    width: 250px !important;
+    margin: auto !important;
+    margin-bottom: 20px !important;
   }
   .team {
     h1 {
@@ -464,6 +466,9 @@
     }
     &_card {
       width: 40% !important;
+      h6 {
+        font-size: 12px;
+      }
     }
   }
   .cardCenter {
@@ -475,12 +480,21 @@
   }
 
   .contact_col2 {
-    margin-left: 180px;
+    margin-left: 120px;
     margin-top: 20px;
   }
   .blog {
+    img {
+      width: 100px !important;
+      height: 120px !important;
+      overflow: hidden !important;
+    }
     h5 {
-      font-size: 14px;
+      font-size: 10px;
+      line-height: 15px;
+    }
+    h6 {
+      line-height: 15px;
     }
   }
   .footer_row {
@@ -490,9 +504,18 @@
     margin-left: 16px !important;
   }
   .footer_p {
-    margin-left: -54px !important;
+    margin-left: -47px !important;
   }
   .footer-p0 {
     margin-left: 30px !important;
+  }
+  .footer-col {
+    margin-right: 145px;
+  }
+  .footer-img:nth-child(1) {
+    margin-right: 10px;
+  }
+  .footer-img:nth-child(2) {
+    margin-right: 10px;
   }
 }
