@@ -519,3 +519,13 @@
     margin-right: 10px;
   }
 }
+
+@media screen and (nax-width: 768px) {
+  .home {
+    &_signup {
+      white-space: nowrap !important;
+      font-size: 12px !important;
+      line-height: 6px !important;
+    }
+  }
+}

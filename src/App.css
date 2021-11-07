@@ -63,9 +63,18 @@
     width: 200px !important;
   }
 }
+*/
 
-@media screen and (max-width: 640px) {
-  .servicesCard {
-    width: 200px !important;
+@media screen and (max-width: 768px) {
+  .home_signup {
+    white-space: nowrap !important;
+    font-size: 12px !important;
   }
-}*/
+  .why_row {
+    justify-content: center;
+  }
+  .WhyCard {
+    width: 100% !important;
+    margin-bottom: 50px !important;
+  }
+}

@@ -153,9 +153,9 @@ in daily diet`,
       {/* WHY US SECTION */}
       <section className="why">
         <div className="container mt-5 mb-5">
-          <div className="row mx-auto ">
-            <div className="col-md-6 mt-5">
-              <div className="card mt-5 w-75 whyUs why_card">
+          <div className="row mx-auto why_row">
+            <div className="col-lg-6 col-md-8 mt-5">
+              <div className="card mt-5 w-75 whyUs why_card WhyCard">
                 <div className="card-body pt-5 pb-5 px-3 pe-5 why_cardbody">
                   <h5 class="card-title ms-4 mb-4">Why choosing Us?</h5>
                   <ul className="" style={{ listStyleType: "none" }}>
